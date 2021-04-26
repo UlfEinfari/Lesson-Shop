@@ -1,0 +1,167 @@
+@import "http://fonts.fontstorage.com/import/lato.css";
+
+body{
+    margin: 0;
+    font-family: Lato;
+    }
+
+header{
+    
+    background: black;
+    height: 74px;
+}
+
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    padding: 16px 18px;    
+}
+
+.logoimg{
+    margin-right: 41px;
+}
+
+.userimg{
+    display: none;
+}
+
+.basketimg{
+    display: none;
+}
+
+.basketfill {
+    position: relative;
+    display: none;
+}
+
+.basketfill span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: white;
+    background: #f16d7f;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    right: -8px;
+    top: -19px;
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.banner{
+    background: #F1E4E6;
+    display: flex;
+    min-height: 363px;
+    margin-bottom: 64px;
+}
+
+.ban_img{    
+    display: none;    
+}
+
+.ban_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+
+.bantxt{
+    border-left: 12px solid #F16D7F;
+    padding-left: 15px;
+}
+
+.ban_1{
+    margin: 0;
+    font-weight: 810;
+    font-size: 36px;
+    line-height: 35px;   
+    text-transform: uppercase;
+}
+
+.ban_2{
+    margin: 0;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+h2 span{
+    color: #F16D7F;
+}
+
+.offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer_item{
+    margin-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.offer_acess{
+    height: 111px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.offer_acess img{
+    height: 100%
+};
+
+.offer_item img{
+   width: 100%;
+}
+
+
+
+@media (min-width:768px){
+.headleft{
+    padding-left: 32px;
+
+}
+
+.headright{
+    padding-right: 42px;
+}
+
+.userimg{
+    display: inline;
+    margin-left: 25px;
+}
+
+.basketimg{
+    display: inline;
+    margin-left: 42px;
+}
+.basketfill {
+    display: inline;
+}
+.ban_text{width: 50%;}
+
+.ban_img{    
+    display: block;
+    width: 50%;}    
+}
+
+
+
+
+@media (min-width:1140px){
+.container{
+    width: 1140px;
+    }
+    .ban_text{
+        padding-left: 60px;
+        justify-content: flex-start;
+    }
+}
