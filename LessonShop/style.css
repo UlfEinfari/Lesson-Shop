@@ -1,167 +1,654 @@
 @import "http://fonts.fontstorage.com/import/lato.css";
 
 body{
-    margin: 0;
+    margin: 0 auto;
     font-family: Lato;
     }
 
 header{
-    
-    background: black;
-    height: 74px;
-}
-
-
-.container{
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;   
-    align-items: center;
-    padding: 16px 18px;    
+    background: black;
+    height: 74px;     
 }
+    .headcontainer{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;   
+        align-items: center;
+        padding: 16px 18px;    
+    }
+        
+    .logoimg{
+        margin-right: 41px;
+    }
 
-.logoimg{
-    margin-right: 41px;
-}
+    .userimg{
+        display: none;
+    }
 
-.userimg{
-    display: none;
-}
+    .basketimg{
+        display: none;
+    }
 
-.basketimg{
-    display: none;
-}
+    .basketfill {
+        position: relative;
+        display: none;
+    }
 
-.basketfill {
-    position: relative;
-    display: none;
-}
+    .basketfill span {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        color: white;
+        background: #f16d7f;
+        border-radius: 50%;
+        position: absolute;
+        text-align: center;
+        right: -8px;
+        top: -19px;
+        font-family: Lato, sans-serif;
+        font-size: 12px;
+        line-height: 19px;
+    }
 
-.basketfill span {
-    display: inline-block;
-    width: 19px;
-    height: 19px;
-    color: white;
-    background: #f16d7f;
-    border-radius: 50%;
-    position: absolute;
-    text-align: center;
-    right: -8px;
-    top: -19px;
-    font-family: Lato, sans-serif;
-    font-size: 12px;
-    line-height: 19px;
-}
 
 .banner{
-    background: #F1E4E6;
-    display: flex;
-    min-height: 363px;
-    margin-bottom: 64px;
+        background: #F1E4E6;
+        display: flex;
+        min-height: 363px;
 }
 
-.ban_img{    
-    display: none;    
-}
+    .ban_img{    
+        display: none;    
+    }
+    
+    .ban_text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+       
+    }
+    
+    .bantxt{
+        border-left: 12px solid #F16D7F;
+        padding-left: 15px;
+    }
+    
+    .ban_1{
+        margin: 0;
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 45px;   
+        
+    }
+    
+    .ban_2{
+        margin: 0;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    h2 span{
+        color: #F16D7F;
+    }
 
-.ban_text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-   
-}
-
-.bantxt{
-    border-left: 12px solid #F16D7F;
-    padding-left: 15px;
-}
-
-.ban_1{
-    margin: 0;
-    font-weight: 810;
-    font-size: 36px;
-    line-height: 35px;   
-    text-transform: uppercase;
-}
-
-.ban_2{
-    margin: 0;
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 24px;
-}
-
-h2 span{
-    color: #F16D7F;
-}
-
+    .brandDark {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .menu {
+        width: 232px;
+        height: inherit;
+        background: white;
+        margin-left: auto;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        padding: 37px 24px;
+        box-sizing: border-box;
+        position: relative;
+        max-height: inherit;
+        overflow: auto;
+    }
+    
+    .menuClose {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+    }
+    
+    .menuTitle {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000;
+        margin-bottom: 16px;
+    }
+    
+    .menuHeader {
+        font-size: 14px;
+        line-height: 33px;
+        color: #f16d7f;
+    }
+    
+    .menuUnit a {
+        display: block;
+        font-size: 14px;
+        line-height: 33px;
+        color: #6f6e6e;
+        text-decoration: none;
+        margin-left: 21px;
+    }
+    
+        
 .offer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 250px) 111px;
+    gap: 32px;   
+    padding:64px 16px;
+       }      
+    
+    .offer_item{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .offer_acess{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .offer_item img{
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       position: absolute;
+    
+    }
+    
+    .offer_acess img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+         position: absolute;
+            }
+    
+    .offertxt{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .offertxt h3{
+        margin: 0;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        line-height: 27px;
+    
+    }
+    
+    .offertxt h2{
+        margin: 0;
+        color:#F16D7F;
+        font-size: 24px;    
+    }
 
-.offer_item{
-    margin-bottom: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
-}
+.fetured{
+        margin: 0 auto;
+    }
+    
+    .fetheader{
+        margin-bottom: 65px;
+    }
+    .feturedItems{
+        display: grid;   
+        grid-row-gap: 18px;
+    }
+    
+    .fitem{
+        background: #F8F8F8;
+        text-align: left ;
+       
+    }
+    
+    .fetimg{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .fetimage{	
+        object-fit: cover;	
+        width: 100%;
+    }
+    
+    .fetureddark{
+        background: rgba(58, 56, 56, 0.86);
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fitem:hover .fetureddark{
+        display: flex;
+    }
+    button{
+        display: flex;
+        color:#FFFFFF;
+        border: 1px solid white;
+        align-items: center;
+        justify-content: center;
+        height: 43px;
+        width: 138px;
+        background: none;
+        font-size: 14px;
+    }
+    
+    .cart{
+        margin-right: 11px;
+        width: 26px;
+        height: 24px;
+        
+    }
+    
+    
+    
+    .fetured{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    .fetheader{
+        text-align: center ;
+    }
+    
+    .fetured1{
+        font-size: 30px;  
+        margin: 0px;  
+        line-height: 36px;
+    }
+    .fetured2{
+        margin: 0px;
+        font-size: 14px;
+        line-height: 17px; 
+        color: #9F9F9F;
+        margin-bottom: 64px;
+    }
+    
+    .feturedtxt{
+        padding-left: 17px;
+        padding-bottom: 17px;
+    }
+    
+    
+    .fetured3{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px
+    }
+    .fetured4{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5D5D5D;
+        
+    }
+    .price{
+        font-size: 16px;
+        line-height: 19px;
+        color: #F16D7F;
+        margin-top: 16px;
+        margin-bottom: 0px;
+    }
 
-.offer_acess{
-    height: 111px;
-    padding-left: 16px;
-    padding-right: 16px;
-}
+    .browse{
+        height: 145px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .browseblock{    
+        text-align: center;
+        height: 47px;
+        width: 211px;
+        border: 1px solid #FF6A6A;
+        margin-top: 41px;
+    }
+    
+    .browseblock:hover {
+        background:#F16D7F;
+        color: white;
+    }
+    .browseblock:hover .browsetxt {
+        color: white;
+    }
+    
+    .browsetxt{
+        font-size: 16px;
+        line-height: 19px;    
+        color: #F26376;  
+    }
 
-.offer_acess img{
-    height: 100%
-};
+    .bb{
+        display: flex;
+        justify-content: center;
+        background: #222224;
+    }
+    .blackblock{
+        
+        padding-top: 48px;
+        padding-bottom: 81px;
+        padding-left: 14px;
+        padding-right: 13px;
+        display: grid;
+        grid-template-columns: 360px;
+        grid-gap: 47px;
+    }
+    
+    .bbitem{
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    
+    .bbh{
+        font-size: 19.96px;
+        line-height: 24px;
+        color: #FBFBFB;
+        margin-top: 24px;
+    }
+    
+    .bbtext{
+        font-weight: 300;
+        font-size: 13.972px;
+        line-height: 17px;
+        text-align: center;
+        color: #FBFBFB;
+    }
+    
+.subscribe{
+        background: url(images/subscribe/back.png) no-repeat;
+        background-size: cover;
+        padding-top: 64px;
+        padding-bottom: 109px;
+    }
+    
+    .subleft{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .photo{
+        width: 92px;
+        height: 92px;
+    }
+    .sublefttext{
+        font-size: 18px; 
+        line-height: 23px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 59px;
+        max-width: 335px;
+    }
+        .sublefttext span{
+            font-style: italic;
+        }
+    
+    .subright{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .subhead{
+        font-weight: 700; 
+        font-size: 24px;
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .subRightTxt{
+        font-size: 14px;
+        line-height: 8px;
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 22px;
+    }
+    
+  
+    form input{
+        height: 47px;
+        background: #E1E1E1;
+        border: none;
+        padding-left: 21px;
+        float: left;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        padding: 6px 21px;
+        box-sizing: border-box;
+    }
+    form button{
+        height: 47px;
+        background: #F16D7F;
+        border: none;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        color: white;
+        font-size: 14px;
+        padding: 6px 15px;
+    }    
+    
+footer{
+        background: #222224;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding-top: 43px;
+        padding-bottom: 9px;
+    
+    }
+    
+    .buttons{
+        width: 149px;
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 40px;
+    }
+    .buttons div{
+        height: 32px;
+        width: 32px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttons div:hover {
+        background: #F16D7F;
 
-.offer_item img{
-   width: 100%;
-}
-
-
+    }
+    
+    .rights{
+        font-size: 16px;
+    }
 
 @media (min-width:768px){
-.headleft{
-    padding-left: 32px;
+    
+    .headleft{
+        padding-left: 32px;
+    }
 
+    .headright{
+        padding-right: 42px;
+    }
+
+    .userimg{
+        display: inline;
+        margin-left: 25px;
+    }
+
+    .basketimg{
+        display: inline;
+        margin-left: 42px;
+    }
+    .basketfill {
+        display: inline;
+    }
+        .ban_text{width: 50%;}
+
+        .ban_img{    
+            display: block;
+            width: 50%;
+        } 
+            
+        .ban_1{
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 53px;   
+        }
+        
+        .ban_2{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+            .offer{
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 167px 116px;
+                padding-top: 20px;
+            }
+            .offer_acess{
+                grid-column: 1/-1;
+            }
+
+                .feturedItems{
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 16px;}
+            
+                .fetheader{
+                margin-bottom: 75px;
+                }
+
+                .blackblock{
+    
+                    padding-bottom: 64px;
+                    padding-left: 204px;
+                    padding-right: 204px;
+                }
+
+                .footer{
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 24px 32px;
+            }
+            .buttons{
+                margin: 0;
+            }
 }
-
-.headright{
-    padding-right: 42px;
-}
-
-.userimg{
-    display: inline;
-    margin-left: 25px;
-}
-
-.basketimg{
-    display: inline;
-    margin-left: 42px;
-}
-.basketfill {
-    display: inline;
-}
-.ban_text{width: 50%;}
-
-.ban_img{    
-    display: block;
-    width: 50%;}    
-}
-
-
-
 
 @media (min-width:1140px){
-.container{
-    width: 1140px;
-    }
-    .ban_text{
-        padding-left: 60px;
-        justify-content: flex-start;
-    }
+
+    .headcontainer{
+        width: 1140px;
+        }
+
+        .ban_1{
+            font-size: 48px;
+            line-height: 58px;   
+        }
+        
+        .ban_2{
+            font-size: 37px;
+            line-height: 45px;
+        }
+
+            .offer{
+                margin: 0 auto;
+                grid-template-rows: 260px 180px;
+                width: 1140px;
+                padding-top: 65px;
+                gap: 30px;
+            }
+
+                .feturedItems{
+                    grid-template-columns: 1fr 1fr 1fr;
+                    column-gap: 16px;}
+            
+                .fetheader{
+                margin-bottom: 48px;
+            }
+            
+                .fetured{
+                    width: 1140px;
+                }
+
+                .blackblock{
+                    width: 1140px;
+                      grid-template-columns: repeat(3, 1fr);
+                      padding-top: 104px;
+                      padding-bottom: 104px;
+                      grid-gap: 30px;
+                      }
+
+                      .subscribe{
+                        padding-bottom: 126px;
+                        padding-top: 97px;
+                        
+                    }
+                    
+                    .subcontent{
+                        margin: 0 auto;
+                    
+                        max-width: 1140px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    
+                    .sublefttext{
+                        font-size: 20px; 
+                        }
+
+                        .footer{
+                            width: 1140px;
+                            padding:24px 0 ;
+                        }
 }

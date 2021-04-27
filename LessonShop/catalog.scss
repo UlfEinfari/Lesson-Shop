@@ -1,0 +1,208 @@
+@import "http://fonts.fontstorage.com/import/lato.css";
+
+body{
+    margin: 0 auto;
+    font-family: Lato;
+    }
+
+header{
+    margin: 0 auto;
+    background: black;
+    height: 74px;     
+
+    .container{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;   
+        align-items: center;
+        padding: 16px 18px;    
+    }
+        
+    .logoimg{
+        margin-right: 41px;
+    }
+
+    .userimg{
+        display: none;
+    }
+
+    .basketimg{
+        display: none;
+    }
+
+    .basketfill {
+        position: relative;
+        display: none;
+    }
+
+    .basketfill span {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        color: white;
+        background: #f16d7f;
+        border-radius: 50%;
+        position: absolute;
+        text-align: center;
+        right: -8px;
+        top: -19px;
+        font-family: Lato, sans-serif;
+        font-size: 12px;
+        line-height: 19px;
+    }    
+}
+
+main{
+    .container{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;   
+        align-items: center;
+
+        .content{
+            display: grid;
+            grid-template-rows: 1fr;
+            gap: 16px;
+            padding: 0 8px;
+            
+            .item{
+                text-align: left ;        
+                
+                .img{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;            
+                }
+                
+                .image{	
+                    object-fit: cover;	
+                    width: 100%;
+                }
+                
+                .itemDark{
+                    background: rgba(58, 56, 56, 0.86);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    display: none;
+                    justify-content: center;
+                    align-items: center;            
+                
+                    button{
+                        display: flex;
+                        color:#FFFFFF;
+                        border: 1px solid white;
+                        align-items: center;
+                        justify-content: center;
+                        height: 43px;
+                        width: 138px;
+                        background: none;
+                        font-size: 14px;
+                
+                        .cart{
+                            margin-right: 11px;
+                            width: 26px;
+                            height: 24px;            
+                        }
+                    }
+                }       
+                
+                .itemText{
+                    background: #F8F8F8;
+                    padding-left: 17px;
+                    padding-right: 28px;
+                    padding-bottom: 20px;
+                    padding-top: 25px;
+                    
+                
+                    .itemTextHead{
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 16px;
+                    }
+            
+                    .itemTextTxt{
+                        margin-top: 12px;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #5D5D5D;
+                        
+                    }
+                    .price{
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #F16D7F;
+                        margin-top: 16px;
+                    }
+                }
+                
+                
+                
+                
+            }   
+
+            .blind{
+                @extend .item;
+                display: none;
+            }           
+
+            .item:hover .itemDark{
+                display: flex;
+            }   
+        }
+    }
+
+    
+}
+
+@media (min-width:768px){
+
+    header{
+        .headleft{
+            padding-left: 32px;
+        }
+
+        .headright{
+            padding-right: 42px;
+        }
+
+        .userimg{
+            display: inline;
+            margin-left: 25px;
+        }
+
+        .basketimg{
+            display: inline;
+            margin-left: 42px;
+        }
+        .basketfill {
+            display: inline;
+        }
+    }
+
+    .content{
+        grid-template-columns: 1fr 1fr;
+        padding: 0 16px;
+    }
+
+
+}
+
+@media (min-width:1140px){
+
+    .container{
+        width: 1140px;
+    }
+
+    .content{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main .container .content .blind{
+        display: block;
+    }
+}
