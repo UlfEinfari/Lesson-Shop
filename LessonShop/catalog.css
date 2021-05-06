@@ -58,6 +58,91 @@ main .mainHead {
     color: #5D5D5D; }
     main .mainHead .mainHeadRight span {
       color: #F16D7F; }
+main .filters {
+  padding: 24px 8px 32px 8px;
+  font-size: 12px;
+  line-height: 14px;
+  box-sizing: border-box; }
+  main .filters .filtersContainer {
+    display: flex;
+    justify-content: space-between; }
+  main .filters .filterLeft {
+    position: relative; }
+    main .filters .filterLeft span {
+      display: none;
+      z-index: 2;
+      position: relative;
+      margin-right: 11px; }
+    main .filters .filterLeft img {
+      z-index: 2;
+      position: relative; }
+    main .filters .filterLeft .imgpink {
+      display: none; }
+    main .filters .filterLeft .filterLleftMenu {
+      display: none;
+      width: 359px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #FFFFFF;
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+      padding: 46px 17px 16px 17px;
+      z-index: 1;
+      box-sizing: border-box; }
+      main .filters .filterLeft .filterLleftMenu .categoriesHead {
+        color: #EF5B70;
+        padding: 11px;
+        border-left: 5px solid #EF5B70;
+        border-bottom: 1px solid #EBEBEB;
+        margin-bottom: 24px; }
+      main .filters .filterLeft .filterLleftMenu nav {
+        display: flex;
+        flex-direction: column;
+        padding-left: 34px; }
+      main .filters .filterLeft .filterLleftMenu nav a {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        margin-bottom: 11px; }
+  main .filters .filterRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6F6E6E; }
+    main .filters .filterRight .filterSize {
+      margin-left: 24px;
+      margin-right: 24px; }
+    main .filters .filterRight .sizeMenu {
+      width: 79px;
+      height: 103px;
+      background: #FFFFFF;
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+      padding-top: 7px;
+      padding-left: 9px;
+      padding-bottom: 11px;
+      font-size: 14px;
+      color: #6F6E6E;
+      position: absolute;
+      display: none;
+      z-index: 2;
+      box-sizing: border-box; }
+      main .filters .filterRight .sizeMenu div {
+        margin-bottom: 4px; }
+  main .filters .filterSize:hover .sizeMenu {
+    display: block; }
+  main .filters .filterLeft:hover span {
+    left: 16px;
+    top: 13px;
+    color: #EF5B70; }
+  main .filters .filterLeft:hover img {
+    display: none; }
+  main .filters .filterLeft:hover .imgpink {
+    display: inline;
+    left: 16px;
+    top: 13px; }
+  main .filters .filterLeft:hover .filterLleftMenu {
+    display: block; }
 main .container {
   display: block; }
   main .container .content {
@@ -239,6 +324,21 @@ footer {
     .mainHead .container .mainHeader .mainHeadLeft {
       margin: 0; }
 
+  .filters {
+    padding-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+    line-height: 17px; }
+    .filters .filtersContainer .filterLeft span {
+      display: inline;
+      font-weight: 600; }
+    .filters .filtersContainer .filterLeft img {
+      width: 15px;
+      height: 10px; }
+    .filters .filterRight {
+      font-weight: 400; }
+
   .content {
     grid-template-columns: 1fr 1fr;
     padding: 0 16px; }
@@ -250,7 +350,14 @@ footer {
     footer .container .footer .buttons {
       margin: 0; } }
 @media (min-width: 1140px) {
+  .filters {
+    margin: 0 auto;
+    width: 1140px; }
+    .filters .filtersContainer {
+      width: 517px; }
+
   .container {
+    margin: 0 auto;
     width: 1140px; }
     .container .content {
       grid-template-columns: 1fr 1fr 1fr; }

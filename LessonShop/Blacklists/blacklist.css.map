@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EAAE,MAAM,EAAE,MAAM",
+"sources": ["blacklist.scss"],
+"names": [],
+"file": "blacklist.css"
+}
