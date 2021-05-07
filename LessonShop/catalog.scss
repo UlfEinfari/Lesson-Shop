@@ -311,6 +311,77 @@ main{
         }
     }
 
+    .paging{
+            margin: 0 auto;
+            width: 244px;
+            height: 44px;
+            border: 1px solid #EBEBEB;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 5px;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-top: 49px;
+            margin-bottom: 96px;
+            
+        
+            a{
+                font-size: 16px;
+                line-height: 19px;
+                color: #C4C4C4;
+                text-decoration: none;
+            }
+        
+            span{color: #C4C4C4;}
+        
+            
+        }
+        .paging a:hover{
+            color: #EF5B70;
+        }
+}
+
+.bb{
+    display: flex;
+    justify-content: center;
+    background: #222224;
+}
+.blackblock{
+    
+    padding-top: 48px;
+    padding-bottom: 81px;
+    padding-left: 14px;
+    padding-right: 13px;
+    display: grid;
+    grid-template-columns: 360px;
+    grid-gap: 47px;
+}
+
+.bbitem{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.bbh{
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-top: 24px;
+}
+
+.bbtext{
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
     .subscribe{
         background: url(images/subscribe/back.png) no-repeat;
         background-size: cover;
@@ -389,7 +460,9 @@ main{
             }    
         }
     }    
-}
+
+   
+
 
 footer{
     background: #222224;
@@ -504,6 +577,13 @@ footer{
         padding: 0 16px;
     }
 
+    .blackblock{
+    
+        padding-bottom: 64px;
+        padding-left: 204px;
+        padding-right: 204px;
+    }
+
     footer .container .footer{
         flex-direction: row;
         justify-content: space-between;
@@ -543,6 +623,14 @@ footer{
     main .container .content .blind{
         display: block;
     }
+
+    .blackblock{
+        width: 1140px;
+          grid-template-columns: repeat(3, 1fr);
+          padding-top: 104px;
+          padding-bottom: 104px;
+          grid-gap: 30px;
+          }
 
     .subscribe{
         padding-bottom: 126px;

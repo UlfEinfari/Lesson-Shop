@@ -209,47 +209,103 @@ main .container {
       display: none; }
     main .container .content .item:hover .itemDark, main .container .content .blind:hover .itemDark {
       display: flex; }
-main .subscribe {
+main .paging {
+  margin: 0 auto;
+  width: 244px;
+  height: 44px;
+  border: 1px solid #EBEBEB;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 49px;
+  margin-bottom: 96px; }
+  main .paging a {
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+    text-decoration: none; }
+  main .paging span {
+    color: #C4C4C4; }
+main .paging a:hover {
+  color: #EF5B70; }
+
+.bb {
+  display: flex;
+  justify-content: center;
+  background: #222224; }
+
+.blackblock {
+  padding-top: 48px;
+  padding-bottom: 81px;
+  padding-left: 14px;
+  padding-right: 13px;
+  display: grid;
+  grid-template-columns: 360px;
+  grid-gap: 47px; }
+
+.bbitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.bbh {
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #FBFBFB;
+  margin-top: 24px; }
+
+.bbtext {
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB; }
+
+.subscribe {
   background: url(images/subscribe/back.png) no-repeat;
   background-size: cover;
   padding-top: 64px;
   padding-bottom: 109px; }
-  main .subscribe .subleft {
+  .subscribe .subleft {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px; }
-    main .subscribe .subleft .photo {
+    .subscribe .subleft .photo {
       width: 92px;
       height: 92px; }
-    main .subscribe .subleft .sublefttext {
+    .subscribe .subleft .sublefttext {
       font-size: 18px;
       line-height: 23px;
       text-align: center;
       margin-top: 30px;
       margin-bottom: 59px;
       max-width: 335px; }
-      main .subscribe .subleft .sublefttext .sublefttext span {
+      .subscribe .subleft .sublefttext .sublefttext span {
         font-style: italic; }
-  main .subscribe .subright {
+  .subscribe .subright {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    main .subscribe .subright .subhead {
+    .subscribe .subright .subhead {
       font-weight: 700;
       font-size: 24px;
       line-height: 20px;
       text-align: center; }
-    main .subscribe .subright .subRightTxt {
+    .subscribe .subright .subRightTxt {
       font-size: 14px;
       line-height: 8px;
       text-align: center;
       margin-top: 8px;
       margin-bottom: 22px; }
-    main .subscribe .subright form input {
+    .subscribe .subright form input {
       height: 47px;
       background: #E1E1E1;
       border: none;
@@ -259,7 +315,7 @@ main .subscribe {
       border-bottom-left-radius: 25px;
       padding: 6px 21px;
       box-sizing: border-box; }
-    main .subscribe .subright form button {
+    .subscribe .subright form button {
       height: 47px;
       background: #F16D7F;
       border: none;
@@ -343,6 +399,11 @@ footer {
     grid-template-columns: 1fr 1fr;
     padding: 0 16px; }
 
+  .blackblock {
+    padding-bottom: 64px;
+    padding-left: 204px;
+    padding-right: 204px; }
+
   footer .container .footer {
     flex-direction: row;
     justify-content: space-between;
@@ -364,6 +425,13 @@ footer {
 
   main .container .content .blind {
     display: block; }
+
+  .blackblock {
+    width: 1140px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 104px;
+    padding-bottom: 104px;
+    grid-gap: 30px; }
 
   .subscribe {
     padding-bottom: 126px;

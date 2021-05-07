@@ -1,2 +1,245 @@
-body{ margin: 0 auto;}
+@import "http://fonts.fontstorage.com/import/lato.css";
 
+body{ 
+    margin: 0 auto;
+    font-family: lato;}
+
+.mainheader{
+    background: #F8F3F4;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    padding: 50px 83px 69px 102px;
+}
+
+.shoppingCart{
+    
+    padding: 38px 8px 48px 8px;    
+
+    .cartCard{
+        background: white;
+        display: flex;
+        filter: drop-shadow(8px 8px 9px rgba(0, 0, 0, 0.13));
+        margin-bottom: 32px;
+        height: 188px;
+
+        .cardImg{
+        width: 144px;
+        object-fit: cover;}
+
+        .card{
+            padding-top: 13px;
+            padding-left: 17px;
+            padding-right: 60px;
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            line-height: 17px;
+            color: #575757;
+
+            .cardHead{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+                margin-bottom: 26px;
+            }
+
+            img{
+                width: 13px;
+                position: absolute;
+                top: 17px;
+                right: 12px;
+            }
+
+            .price{color: #F16D7F;}
+
+            input{
+                height: 15px;
+                width: 24px;
+                margin-left: 15px;
+                text-align: center;
+            }
+
+            div{
+            margin-bottom: 4px;
+            }
+        }
+
+       
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+   
+        button{
+            width: 175px;
+            height :33px;
+            border: 1px solid #A4A4A4;
+            text-align: center;
+            background: white;
+            font-family: Lato;
+            font-size: 12px;
+            line-height: 14px;
+            color: #575757;
+        }
+    }
+}
+
+.shippingAdress{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+
+    input{
+        margin-top: 20px;
+        padding: 13px 15px 16px 17px;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+    }
+
+    button{
+        width: 100px;
+        height: 34px;
+        background: white;
+        margin-top: 24px;
+        border: 1px solid #A4A4A4;
+        font-size: 11px;
+        line-height: 13px;
+        color: #575757;
+    }
+    
+}   
+
+.checkout{
+    padding: 48px 8px 96px 8px;
+
+    .check{
+        background: #F5F3F3;
+        padding: 39px 34px 42px ;
+        .sub{
+            font-size: 11px;
+            line-height: 13px;  
+            color: #4A4A4A;
+            text-align: right;
+            margin-bottom: 12px;
+        }
+        .grand{
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+            text-align: right;
+            margin-bottom: 21px;
+
+            span{color: #F16D7F;
+            }
+        }
+        span{margin-left: 25px;}
+
+        button{background: #F16D7F;
+            color: white;
+            padding: 15px 42px;
+            margin-top: 17px;
+            border: none;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width:768px){
+    .mainheader{
+        padding: 60px 16px ;
+    }
+
+    .shoppingCart{
+        padding: 60px 16px 48px 16px;
+
+        .cartCard{
+            margin-bottom: 40px;
+            height: 306px;
+    
+            .cardImg{
+                width: 262px;
+                object-fit: cover;
+            }
+
+            .card{
+                padding-top: 22px;
+                padding-left: 31px;
+                padding-right: 240px;
+                font-size: 22px;
+                line-height: 26px;
+    
+                .cardHead{
+                    font-size: 24px;
+                    line-height: 29px;
+                    margin-bottom: 42px;
+                }
+    
+                img{
+                    width: 18px;
+                    top: 28px;
+                    right: 24px;
+                }
+    
+                input{
+                    height: 22px;
+                    width: 43px;
+                    margin-left: 24px;
+                }
+
+                div{
+                    margin-bottom: 6px;
+                }
+            }
+    
+        }
+
+        .buttons{
+            justify-content: space-around;
+       
+            button{
+                width: 235px;
+                height :50px;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    .shippingAdress{
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+    
+        input{
+            margin-top: 20px;
+            padding: 13px 15px 16px 17px;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+        }
+    
+        button{
+            width: 100px;
+            height: 34px;
+            background: white;
+            margin-top: 24px;
+            border: 1px solid #A4A4A4;
+            font-size: 11px;
+            line-height: 13px;
+            color: #575757;
+        }
+        
+    }   
+    
+
+
+}
